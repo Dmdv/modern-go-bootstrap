@@ -40,34 +40,12 @@ To help adopting these practices, this repository also serves as a boilerplate f
 - MySQL database connection (using [go-sql-driver/mysql](https://github.com/go-sql-driver/mysql))
 - ~~Redis connection (using [gomodule/redigo](https://github.com/gomodule/redigo))~~ removed due to lack of usage (see [#120](../../issues/120))
 
-
-## First steps
-
-To create a new application from the boilerplate clone this repository (if you haven't done already) into your GOPATH
-then execute the following:
-
-```bash
-chmod +x init.sh && ./init.sh
-? Package name (github.com/sagikazarmark/modern-go-application)
-? Project name (modern-go-application)
-? Binary name (modern-go-application)
-? Service name (modern-go-application)
-? Friendly service name (Modern Go Application)
-? Update README (Y/n)
-? Remove init script (y/N) y
-```
-
-It updates every import path and name in the repository to your project's values.
-**Review** and commit the changes.
-
-
 ### Load generation
 
 To test or demonstrate the application it comes with a simple load generation tool.
 You can use it to test the example endpoints and generate some load (for example in order to fill dashboards with data).
 
 Follow the instructions in [etc/loadgen](etc/loadgen).
-
 
 ## Inspiration
 

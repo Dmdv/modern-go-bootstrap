@@ -9,7 +9,7 @@ app_user_name: app
 app_config_path: "/home/{{ app_user_name }}"
 
 # Default application image
-app_image: sagikazarmark/modern-go-application
+app_image: dmdv/modern-go-bootstrap
 
 # Default application version
 app_version: latest
