@@ -7,4 +7,4 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 
 
 # def test_application_is_running(host):
-#     host.process.get(user="mga", comm="modern-go-bootstrap")
+#     host.process.get(user="sample", comm="modern-go-bootstrap")

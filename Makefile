@@ -11,7 +11,7 @@ include main.mk
 OPENAPI_DESCRIPTOR_DIR = api/openapi
 
 # Dependency versions
-MGA_VERSION = 0.2.0
+SAMPLE_VERSION = 0.2.0
 
 .PHONY: up
 up: start config.toml ## Set up the development environment
@@ -54,17 +54,17 @@ bin/entc:
 	@mkdir -p bin
 	go build -o bin/entc github.com/facebook/ent/cmd/entc
 
-bin/mga: bin/mga-${MGA_VERSION}
-	@ln -sf mga-${MGA_VERSION} bin/mga
-bin/mga-${MGA_VERSION}:
+bin/sample: bin/sample-${SAMPLE_VERSION}
+	@ln -sf sample-${SAMPLE_VERSION} bin/sample
+bin/sample-${SAMPLE_VERSION}:
 	@mkdir -p bin
-	curl -sfL https://git.io/mgatool | bash -s v${MGA_VERSION}
-	@mv bin/mga $@
+	curl -sfL https://git.io/mgatool | bash -s v${SAMPLE_VERSION}
+	@mv bin/sample $@
 
 .PHONY: generate
-generate: bin/mga bin/entc ## Generate code
+generate: bin/sample bin/entc ## Generate code
 	go generate -x ./...
-	mga generate kit endpoint ./internal/app/mga/todo/...
-	mga generate event handler --output subpkg:suffix=gen ./internal/app/mga/todo/...
-	mga generate event dispatcher --output subpkg:suffix=gen ./internal/app/mga/todo/...
-	entc generate ./internal/app/mga/todo/todoadapter/ent/schema
+	sample generate kit endpoint ./internal/app/sample/todo/...
+	sample generate event handler --output subpkg:suffix=gen ./internal/app/sample/todo/...
+	sample generate event dispatcher --output subpkg:suffix=gen ./internal/app/sample/todo/...
+	entc generate ./internal/app/sample/todo/todoadapter/ent/schema

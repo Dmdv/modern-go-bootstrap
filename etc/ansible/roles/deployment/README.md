@@ -15,7 +15,7 @@ Role Variables
 | -------- | ------- | ----------- |
 | `binary_source` | *none* | Local source of the binaries to copy |
 | `binary_name` | `modern-go-bootstrap` | Binary to copy |
-| `mga_service_name` | `mga` | Service to be restarted |
+| `sample_service_name` | `sample` | Service to be restarted |
 
 Dependencies
 ------------

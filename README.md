@@ -1,30 +1,22 @@
-# Modern Go Application
-
-[![Mentioned in Awesome Go](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/avelino/awesome-go#project-layout)
-[![Go Report Card](https://goreportcard.com/badge/github.com/sagikazarmark/modern-go-application?style=flat-square)](https://goreportcard.com/report/github.com/sagikazarmark/modern-go-application)
-[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/mod/github.com/sagikazarmark/modern-go-application)
-
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sagikazarmark/modern-go-application/CI?style=flat-square)
-[![CircleCI](https://circleci.com/gh/sagikazarmark/modern-go-application.svg?style=svg)](https://circleci.com/gh/sagikazarmark/modern-go-application)
-[![Gitlab](https://img.shields.io/badge/gitlab-sagikazarmark%2Fmodern--go--application-orange.svg?logo=gitlab&longCache=true&style=flat-square)](https://gitlab.com/sagikazarmark/modern-go-application)
+# Modern Go Application Bootstrap
 
 **Go application boilerplate and example applying modern practices**
 
 This repository tries to collect the best practices of application development using Go language.
 In addition to the language specific details, it also implements various language independent practices.
 
-Some of the areas Modern Go Application touches:
+Some areas Modern Go Application touches:
 
 - architecture
 - package structure
 - building the application
 - testing
 - configuration
-- running the application (eg. in Docker)
+- running the application (e.g. in Docker)
 - developer environment/experience
 - telemetry
 
-To help adopting these practices, this repository also serves as a boilerplate for new applications.
+To help adopt these practices, this repository also serves as a boilerplate for new applications.
 
 
 ## Features
@@ -51,8 +43,3 @@ Follow the instructions in [etc/loadgen](etc/loadgen).
 
 See [INSPIRATION.md](INSPIRATION.md) for links to articles, projects, code examples that somehow inspired
 me while working on this project.
-
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE) for more information.
