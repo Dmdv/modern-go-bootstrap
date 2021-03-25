@@ -1,4 +1,4 @@
-# Modern Go Application Bootstrap
+# Modern Go Bootstrap
 
 This is a stripped version of   
 https://github.com/Dmdv/modern-go-application  
@@ -13,7 +13,7 @@ I will be enriching this project with less overengineering practices compared to
 This repository tries to collect the best practices of application development using Go language.
 In addition to the language specific details, it also implements various language independent practices.
 
-Some areas Modern Go Application touches:
+Some areas Modern Go Boostrap touches:
 
 - architecture
 - package structure
