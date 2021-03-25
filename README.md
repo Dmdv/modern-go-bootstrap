@@ -1,5 +1,13 @@
 # Modern Go Application Bootstrap
 
+This is a stripped version of   
+https://github.com/Dmdv/modern-go-application  
+I removed the sample application to keep it clean for further development  
+
+I will be enriching this project with less overengineering practices compared to the original template.
+
+
+
 **Go application boilerplate and example applying modern practices**
 
 This repository tries to collect the best practices of application development using Go language.
